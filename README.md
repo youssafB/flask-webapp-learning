@@ -15,7 +15,7 @@ The project structure is kept simple to focus on the essential components.
 - **templates/index.html**: HTML template for the web page.
 - **app.py**: The main Flask application file.
 
-Usage
+## Usage
 Click on the "Choose File" button to select an image file.
 Click the "Upload" button to upload the selected image.
 The app will perform basic editing on the image and display it along with a short message.
