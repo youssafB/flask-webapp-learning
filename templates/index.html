@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Image Editor</title>
+</head>
+<body>
+    <h1>Image Editor</h1>
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+    </form>
+    {% if filename %}
+        <p>{{ message }}</p>
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="edited image">
+    {% endif %}
+</body>
+</html>
